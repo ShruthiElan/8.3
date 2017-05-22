@@ -1,0 +1,4 @@
+A=load '/user/acadgild/tweets.csv';
+B=group A by $1;
+C=foreach B generate group,tweets(A);
+dump C;
